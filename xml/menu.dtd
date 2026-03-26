@@ -1,0 +1,19 @@
+<!ELEMENT menu (item+)>
+
+<!ELEMENT item (name, category, price, description, allergies?)>
+
+<!ATTLIST item 
+    id CDATA #REQUIRED
+    availability (yes | no) "yes"
+>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+<!ATTLIST price 
+    currency CDATA #REQUIRED
+>
+
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT allergies (#PCDATA)>
