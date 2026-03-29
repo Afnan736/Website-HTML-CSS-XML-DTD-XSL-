@@ -1,67 +1,70 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Defines this as an HTML5 document -->
 <html>
 <head>
-    <title>Duskwell & Vine</title>
+    <title>Duskwell & Vine</title> <!-- Title shown in browser tab -->
 
     <style>
+          /* GENERAL PAGE STYLING */
         body {
-            margin: 0;
-            font-family: Satisfy;
-            background-color: #628141; /* your chosen colour */
-            color: rgb(4, 4, 4);
+            margin: 0; /* Removes default spacing around page */
+            font-family: Satisfy; /* Sets font style */
+            background-color: #628141;  /* Main background colour */
+            color: rgb(4, 4, 4); /* Default text colour */
         }
 
-        /* HERO SECTION */
+        /* HERO SECTION (TOP BANNER WITH IMAGE + TITLE) */
+        
         .hero {
-            background-image: url(""); /* 🔥 ADD IMAGE HERE */
-            background-size: cover;
-            background-position: center;
-            padding: 100px;
-            text-align: center;
+            background-image: url(""); /* Background image for header */
+            background-size: cover;  /* Makes image fill the section */
+            background-position: center; /* Centers the image */
+            padding: 100px; /* Space inside section */
+            text-align: center; /* Centers text horizontally */
         }
 
         .hero h1 {
-            font-size: 50px;
+            font-size: 50px; /* Makes main title large */
         }
 
-        /* ABOUT SECTION */
+        /* ABOUT SECTION (TEXT + IMAGE SIDE BY SIDE) */
         .about {
-            display: flex;
+            display: flex; /* Places text and image next to each other */
             padding: 40px;
             background-color: #628141;
         }
 
         .about-text {
-            width: 50%;
+            width: 50%; /* Takes half the space */
         }
 
         .about img {
-            width: 50%;
+            width: 50%; /* Image takes other half */
         }
 
-        /* TABLE SECTION */
+         /* OPENING HOURS SECTION */
         .hours {
             text-align: center;
             padding: 40px;
         }
 
+        /* TABLE STYLING */
         table {
-            margin: auto;
-            border-collapse: collapse;
+            margin: auto; /* Centers the table */
+            border-collapse: collapse; /* Removes gaps between borders */
             width: 50%;
             background-color:#628141;
             color: black;
         }
 
         table, th, td {
-            border: 1px solid black;
-            padding: 10px;
+            border: 1px solid black; /* Adds borders to table */
+            padding: 10px; /* Adds spacing inside cells */
         }
 
-        /* CONTACT SECTION */
+        /* CONTACT SECTION WITH BACKGROUND IMAGE */
         .contact {
             padding: 40px;
-            background-image: url("contact.jpg"); /* 🔥 ADD IMAGE HERE */
+            background-image: url("contact.jpg"); /* Background image */
             background-size: cover;
         }
 
@@ -70,7 +73,7 @@
 
 <body>
 
-<!-- HERO SECTION -->
+<!-- HERO SECTION (MAIN TITLE + INTRO) -->
 <div class="hero">
     <h1>Duskwell & Vine</h1>
     <p>Fine Dining Experience</p>
@@ -81,10 +84,12 @@
 
     <div class="about-text">
         <h2>About Our Restaurant</h2>
+        <!-- Paragraph describing the restaurant -->
         <p>
             We offer a wide range of freshly prepared dishes in a warm and welcoming environment.
             Our chefs use high-quality ingredients to deliver an unforgettable dining experience.
         </p>
+        <!-- List of menu categories -->
 
         <h3>Our Menu Includes:</h3>
         <ul>
@@ -93,10 +98,12 @@
             <li>Drinks</li>
         </ul>
 
+        <!-- Link to XML menu page -->
+
         <a href="menu.xml">View Menu</a>
     </div>
 
-    <!-- 🔥 ADD IMAGE HERE -->
+    <!-- Image of the restaurant -->
     <img src="restaurant.jpg" alt="Restaurant Image">
 
 </div>
@@ -104,6 +111,8 @@
 <!-- OPENING HOURS -->
 <div class="hours">
     <h2>Opening Hours</h2>
+
+    <!-- HTML Table showing opening times -->
 
     <table>
         <tr>
@@ -132,6 +141,8 @@
 <!-- CONTACT SECTION -->
 <div class="contact">
     <h2>Contact & Visit Us</h2>
+
+    <!-- Contact details -->
 
     <p><strong>Address:</strong> 45 London Street, London</p>
     <p><strong>Phone:</strong> 07123 456789</p>
