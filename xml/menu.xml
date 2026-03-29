@@ -3,100 +3,159 @@
 
 <menu>
 
-    <item id="1" availability="yes">
-        <name>Grilled Chicken</name>
-        <category>Non-Veg</category>
-        <price currency="GBP">10.99</price>
-        <description>Juicy grilled chicken breast</description>
-        <allergies>None declared</allergies>
-    </item>
+    <!-- Starters to kick things off -->
+    <category name="Appetisers">
+        <item id="1">
+            <name>Garlic Bread</name>
+            <price currency="GBP">3.99</price>
+            <description>Toasted bread with garlic butter</description>
+            <allergies>Gluten</allergies>
+        </item>
 
-    <item id="2" availability="yes">
-        <name>Chicken Burger</name>
-        <category>Non-Veg</category>
-        <price currency="GBP">7.99</price>
-        <description>Chicken patty with lettuce</description>
-        <allergies>Gluten, Dairy</allergies>
-    </item>
+        <item id="2">
+            <name>Chicken Wings (Halal)</name>
+            <price currency="GBP">6.99</price>
+            <description>Spicy grilled wings</description>
+            <allergies>None declared</allergies>
+        </item>
 
-    <item id="3" availability="yes">
-        <name>Beef Steak</name>
-        <category>Non-Veg</category>
-        <price currency="GBP">14.99</price>
-        <description>Grilled beef steak</description>
-        <allergies>None declared</allergies>
-    </item>
+        <item id="3">
+            <name>Spring Rolls (Vegan)</name>
+            <price currency="GBP">5.50</price>
+            <description>Crispy vegetable rolls</description>
+            <allergies>Gluten</allergies>
+        </item>
 
-    <item id="4" availability="yes">
-        <name>Pepperoni Pizza</name>
-        <category>Non-Veg</category>
-        <price currency="GBP">9.99</price>
-        <description>Pizza with pepperoni</description>
-        <allergies>Gluten, Dairy</allergies>
-    </item>
+        <item id="4">
+            <name>Loaded Fries</name>
+            <price currency="GBP">4.99</price>
+            <description>Fries topped with cheese and sauce</description>
+            <allergies>Dairy</allergies>
+        </item>
+    </category>
 
-    <item id="5" availability="yes">
-        <name>Chicken Wings</name>
-        <category>Non-Veg</category>
-        <price currency="GBP">6.99</price>
-        <description>Spicy wings</description>
-        <allergies>None declared</allergies>
-    </item>
+    <!-- Main dishes for meat lovers -->
+    <category name="Non-Veg">
+        <item id="5">
+            <name>Grilled Chicken (Halal)</name>
+            <price currency="GBP">10.99</price>
+            <description>Juicy grilled chicken breast</description>
+            <allergies>None declared</allergies>
+        </item>
 
-    <item id="6" availability="no">
-        <name>Fish and Chips</name>
-        <category>Non-Veg</category>
-        <price currency="GBP">11.50</price>
-        <description>Classic fried fish</description>
-        <allergies>Fish, Gluten</allergies>
-    </item>
+        <item id="6">
+            <name>Beef Steak</name>
+            <price currency="GBP">14.99</price>
+            <description>Grilled beef steak</description>
+            <allergies>None declared</allergies>
+        </item>
 
-    <item id="7" availability="yes">
-        <name>Veggie Burger</name>
-        <category>Veg</category>
-        <price currency="GBP">7.49</price>
-        <description>Vegetable patty burger</description>
-        <allergies>Gluten</allergies>
-    </item>
+        <item id="7">
+            <name>Chicken Burger (Halal)</name>
+            <price currency="GBP">7.99</price>
+            <description>Chicken patty with lettuce</description>
+            <allergies>Gluten, Dairy</allergies>
+        </item>
 
-    <item id="8" availability="yes">
-        <name>Margherita Pizza</name>
-        <category>Veg</category>
-        <price currency="GBP">8.99</price>
-        <description>Cheese pizza</description>
-        <allergies>Gluten, Dairy</allergies>
-    </item>
+        <item id="8">
+            <name>Fish and Chips</name>
+            <price currency="GBP">11.50</price>
+            <description>Classic fried fish</description>
+            <allergies>Fish, Gluten</allergies>
+        </item>
+    </category>
 
-    <item id="9" availability="yes">
-        <name>Pasta Alfredo</name>
-        <category>Veg</category>
-        <price currency="GBP">8.50</price>
-        <description>Creamy pasta</description>
-        <allergies>Dairy, Gluten</allergies>
-    </item>
+    <!-- Vegetarian favourites -->
+    <category name="Veg">
+        <item id="9">
+            <name>Margherita Pizza</name>
+            <price currency="GBP">8.99</price>
+            <description>Classic cheese pizza</description>
+            <allergies>Gluten, Dairy</allergies>
+        </item>
 
-    <item id="10" availability="yes">
-        <name>Garlic Bread</name>
-        <category>Veg</category>
-        <price currency="GBP">3.99</price>
-        <description>Toasted bread</description>
-        <allergies>Gluten</allergies>
-    </item>
+        <item id="10">
+            <name>Pasta Alfredo</name>
+            <price currency="GBP">8.50</price>
+            <description>Creamy pasta</description>
+            <allergies>Dairy, Gluten</allergies>
+        </item>
 
-    <item id="11" availability="yes">
-        <name>Paneer Wrap</name>
-        <category>Veg</category>
-        <price currency="GBP">6.99</price>
-        <description>Paneer with sauce</description>
-        <allergies>Dairy, Gluten</allergies>
-    </item>
+        <item id="11">
+            <name>Paneer Wrap</name>
+            <price currency="GBP">6.99</price>
+            <description>Paneer with sauce</description>
+            <allergies>Dairy, Gluten</allergies>
+        </item>
 
-    <item id="12" availability="yes">
-        <name>Vegetable Soup</name>
-        <category>Veg</category>
-        <price currency="GBP">4.99</price>
-        <description>Hot mixed veg soup</description>
-        <allergies>None declared</allergies>
-    </item>
+        <item id="12">
+            <name>Vegetable Soup</name>
+            <price currency="GBP">4.99</price>
+            <description>Warm mixed veg soup</description>
+            <allergies>None declared</allergies>
+        </item>
+    </category>
+
+    <!-- Plant-based options -->
+    <category name="Vegan">
+        <item id="13">
+            <name>Vegan Burger</name>
+            <price currency="GBP">8.49</price>
+            <description>Plant-based patty</description>
+            <allergies>Gluten</allergies>
+        </item>
+
+        <item id="14">
+            <name>Quinoa Salad</name>
+            <price currency="GBP">7.50</price>
+            <description>Healthy quinoa mix</description>
+            <allergies>None declared</allergies>
+        </item>
+
+        <item id="15">
+            <name>Vegan Wrap</name>
+            <price currency="GBP">6.99</price>
+            <description>Fresh veggie wrap</description>
+            <allergies>Gluten</allergies>
+        </item>
+
+        <item id="16">
+            <name>Fruit Bowl</name>
+            <price currency="GBP">5.50</price>
+            <description>Seasonal fruits</description>
+            <allergies>None declared</allergies>
+        </item>
+    </category>
+
+    <!-- Drinks to go with your meal -->
+    <category name="Drinks">
+        <item id="17">
+            <name>Fresh Orange Juice</name>
+            <price currency="GBP">3.50</price>
+            <description>Freshly squeezed juice</description>
+            <allergies>None declared</allergies>
+        </item>
+
+        <item id="18">
+            <name>Mango Smoothie</name>
+            <price currency="GBP">4.50</price>
+            <description>Sweet mango blend</description>
+            <allergies>Dairy</allergies>
+        </item>
+
+        <item id="19">
+            <name>Soft Drink</name>
+            <price currency="GBP">2.00</price>
+            <description>Choice of soda</description>
+            <allergies>None declared</allergies>
+        </item>
+
+        <item id="20">
+            <name>Mineral Water</name>
+            <price currency="GBP">1.50</price>
+            <description>Still or sparkling water</description>
+            <allergies>None declared</allergies>
+        </item>
+    </category>
 
 </menu>
