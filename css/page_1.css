@@ -1,10 +1,4 @@
-/* Page style */
-body{
-  margin:0;
-  background:linear-gradient(135deg,#628141,#CDB885);
-  color:#040404;
-  font-style:italic; /* italic default font for body */
-}
+
 
 /* Navigation bar */
 nav{
@@ -18,13 +12,12 @@ nav{
   z-index:1000;
 }
 
-/* Logo container */
+/* nav container */
 .nav{
   display:flex;
   align-items:center;
   gap:12px;
 }
-
 /* Logo image */
 .nav img{
   width:45px;
@@ -32,7 +25,7 @@ nav{
   object-fit:cover; /* logo size fixed */
 }
 
-/* Logo text */
+/* text */
 nav h2{
   margin:0;
   font-family:"Satisfy";
@@ -207,7 +200,6 @@ nav ul li a:hover{
 }
 
 
-
 /* Menu link in About section */
 .abouttext a{
   display:inline-block;
@@ -262,20 +254,16 @@ nav ul li a:hover{
   letter-spacing:2px;
   margin-bottom:20px;
 }
-.hours table {
-  width:80%;         /* wider table */
-  min-width:400px;
-  margin:auto;
-  border-collapse:collapse;
-  color:white;
-  background: rgba(0,0,0,0.2);
-}
+
 .hours th, .hours td {
-  border:1px solid rgba(255,255,255,0.3);
-  padding:18px 35px; /* bigger cells */
-  text-align:center;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 18px 35px;             /* keep your original cell padding for same layout */
+  text-align: center;
 }
-tr:hover{background:rgba(255,255,255,0.08);}
+
+.hours tr:hover {
+  background: rgba(255,255,255,0.08);
+}
 
 /* Contact section */
 .contactwrapper{
