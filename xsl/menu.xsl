@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="/">
 
 <html>
+
 <head>
-    <title>Duskwell &amp; Vine </title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/page_2.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&amp;display=swap" rel="stylesheet"/>
+<title>Duskwell &amp; Vine</title>
 
+<link rel="stylesheet" href="../css/page_2.css"/>
+
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&amp;display=swap" rel="stylesheet"/>
 <style>
 body {
-    margin: 0; /* remove default margin */
-    font-family: sans-serif; /* default font */
-    color: white;
+margin:0;
+font-family:sans-serif;
+color:#ffffff;
 }
 </style>
 </head>
@@ -25,49 +27,81 @@ body {
 
 <div class="container">
 
-    <!-- Header -->
-    <h1>Duskwell &amp; Vine Menu</h1>
-    <a href="../test.html" class="back-btn">← Back to Home</a>
+<!-- Header -->
+<h1>Duskwell &amp; Vine Menu</h1>
 
-    <!-- Menu Sections -->
-    <xsl:for-each select="menu/category">
-        <table class="menu-table">
-            <!-- Category title -->
-            <tr>
-                <th colspan="3" class="category-title">
-                    <xsl:value-of select="@name"/>
-                </th>
-            </tr>
+<a href="../main.html" class="back">← Back to Home</a>
 
-            <!-- Table headers -->
-            <tr>
-                <th>Item</th>
-                <th>Price</th>
-                <th>Description</th>
-            </tr>
+<!-- Menu Sections -->
+<xsl:for-each select="menu/category">
 
-            <!-- Menu items -->
-            <xsl:for-each select="item">
-                <tr>
-                    <td><xsl:value-of select="name"/></td>
-                    <td>£<xsl:value-of select="price"/></td>
-                    <td><xsl:value-of select="description"/></td>
-                </tr>
-            </xsl:for-each>
-        </table>
-    </xsl:for-each>
+<table class="menutable">
 
-    <!-- Bottom image -->
-    <div class="image">
-        <img src="../picture/img1.jpeg" alt="food"/>
-    </div>
+<tr>
+<th colspan="3" class="categorytitle">
+<xsl:value-of select="@name"/>
+</th>
+</tr>
 
-    <!-- Footer tooltip -->
-    <p class="footer">ⓘ <span class="tooltip">Done by: Your Name</span></p>
+<tr>
+<th>Item</th>
+<th>Price</th>
+<th>Description</th>
+</tr>
+
+<xsl:for-each select="item">
+
+<tr>
+
+<td>
+<xsl:value-of select="name"/>
+</td>
+
+<td>
+£<xsl:value-of select="price"/>
+</td>
+
+<td>
+<xsl:value-of select="description"/>
+</td>
+
+</tr>
+
+</xsl:for-each>
+
+</table>
+
+</xsl:for-each>
+
+<!-- Bottom images -->
+<div class="image">
+
+<img src="../picture/food3.jpeg" alt="food"/>
+
+<img src="../picture/food1.jpeg" alt="food"/>
+
+</div>
+
+<!-- Footer icon -->
+<p class="footer">
+
+ⓘ
+
+<span class="icon">
+Done by:<br/>
+MAHI<br/>
+FARAH<br/>
+AFNAN<br/>
+NUHA
+
+</span>
+
+</p>
 
 </div>
 
 </body>
+
 </html>
 
 </xsl:template>

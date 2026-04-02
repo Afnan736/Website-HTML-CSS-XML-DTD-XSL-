@@ -1,134 +1,150 @@
-
-/* BACKGROUND IMAGE + BLUR */
+/* BACKGROUND IMAGE WITH BLUR */
 body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("../picture/img1.jpeg") center/cover no-repeat;
-    filter: blur(8px); /* full-page blur */
-    z-index: -1;
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url("../picture/img2.jpeg") center/cover no-repeat;
+filter:blur(8px);
+z-index:-1;
+
 }
 
-/* MAIN CONTAINER: blurred gradient only */
+/* MAIN CONTAINER */
 .container {
-    width: 80%;
-    margin: 50px auto;
-    padding: 30px;
-    border-radius: 15px;
-    border: 2px solid white;
-    backdrop-filter: blur(10px); /* frosted glass effect */
-    background: linear-gradient(135deg, rgba(98,129,65,0.5), rgba(205,184,133,0.5)); /* semi-transparent gradient */
-    font-style: italic; /* italic text for table/description */
+width:80%;
+margin:50px auto;
+padding:30px;
+border-radius:15px;
+border:2px solid #ffffff;
+backdrop-filter:blur(10px);
+background:linear-gradient(135deg,#62814180,#CDB88580);
+font-style:italic;
 }
 
-/* HEADER: restaurant name */
+/* RESTAURANT TITLE */
 h1 {
-    font-family: 'Satisfy', cursive; /* Satisfy font */
-    font-style: normal; /* override italic for title */
-    font-size: 64px;
-    letter-spacing: 4px;
-    text-align: center;
-    margin-bottom: 10px;
+font-family:'Satisfy',cursive;
+font-style:normal;
+font-size:64px;
+letter-spacing:4px;
+text-align:center;
+margin-bottom:10px;
 }
 
 /* BACK BUTTON */
-.back-btn {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
-    text-decoration: none;
-    font-family: 'Satisfy', cursive; /* Satisfy font */
-    font-style: normal; /* override italic */
+.back {
+display:block;
+text-align:center;
+margin-bottom:20px;
+color:#ffffff;
+text-decoration:none;
+font-family:'Satisfy',cursive;
+font-style:normal;
+font-size:22px;
 }
 
-.back-btn:hover {
-    text-decoration: underline;
+.back:hover {
+text-decoration:underline;
 }
 
 /* MENU TABLE */
-.menu-table {
-    width: 100%;
-    margin-bottom: 25px;
-    border-collapse: separate;
-    border-spacing: 1px;
-    font-style: italic; /* ensure table text is italic */
+.menutable {
+width:100%;
+margin-bottom:25px;
+border-collapse:separate;
+border-spacing:1px;
+font-style:italic;
 }
 
-.category-title {
-    background: rgba(0,0,0,0.4);
-    text-align: left;
-    font-size: 20px;
+/* CATEGORY TITLE */
+.categorytitle {
+background:#00000066;
+text-align:left;
+font-size:20px;
+padding:12px;
 }
 
-.menu-table th {
-    background: rgba(255,255,255,0.2);
-    text-align: left;
-    padding: 12px;
-    border: 1px solid white;
+/* TABLE HEADERS */
+.menutable th {
+background:#ffffff33;
+text-align:left;
+padding:12px;
+border:1px solid #ffffff;
 }
 
-.menu-table td {
-    background: rgba(0,0,0,0.2);
-    padding: 12px;
-    border: 1px solid white;
+/* TABLE CELLS */
+.menutable td {
+background:#00000033;
+padding:12px;
+border:1px solid #ffffff;
 }
 
 /* HOVER EFFECT */
-.menu-table tr:hover td {
-    background: rgba(255,255,255,0.15);
-    transition: 0.3s;
+.menutable tr:hover td {
+background:#ffffff26;
+transition:0.3s;
 }
 
-/* BOTTOM IMAGE */
+/* BOTTOM IMAGES */
+
 .image {
-    text-align: center;
-    margin-top: 30px;
+    height:50% ;
+display:flex;
+justify-content:space-between;
+gap:20px;
+margin-top:30px;
 }
 
 .image img {
-    width: 60%;
-    border-radius: 10px;
+width:50%;
+height:auto;
+border-radius:10px;
+object-fit:cover;
 }
 
-/* FOOTER TOOLTIP */
+/* FOOTER INFO ICON */
 .footer {
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    cursor: pointer;
-    font-size: 18px;
+position:fixed;
+bottom:10px;
+right:20px;
+cursor:pointer;
+font-size:18px;
 }
 
-.tooltip {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    bottom: 30px;
-    right: 0;
-    background: black;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 13px;
-    white-space: nowrap;
-    transition: opacity 0.3s ease;
+/* icon BOX */
+.icon {
+visibility:hidden;
+opacity:0;
+position:absolute;
+bottom:30px;
+right:0;
+background:linear-gradient(135deg,#628141,#CDB885);
+color:#ffffff;
+width: 100px;
+padding:10px 14px;
+border-radius:8px;
+font-size:14px;
+white-space:nowrap;
+backdrop-filter:blur(6px);
+transition:opacity 0.3s ease;
 }
 
-.footer:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
+/* SHOW icon */
+.footer:hover .icon {
+visibility:visible;
+opacity:1;
 }
 
-.tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    right: 10px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: linear-gradient(135deg, rgba(98,129,65,0.5), rgba(205,184,133,0.5)) transparent transparent transparent;
+/* icon ARROW */
+.icon::after {
+content:"";
+position:absolute;
+top:100%;
+right:10px;
+border-width:6px;
+border-style:solid;
+border-color:#CDB885 transparent transparent transparent;
 }
