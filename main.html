@@ -1,153 +1,128 @@
-<!DOCTYPE html> <!-- Defines this as an HTML5 document -->
-<html>
 <head>
-    <title>Duskwell & Vine</title> <!-- Title shown in browser tab -->
+<title>Duskwell & Vine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/page_1.css">
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<style>
+    /* Page style */
+body{
+  margin:0;
+  color:#040404;
+  font-style:italic; /* italic default font for body */
+}
 
-    <style>
-          /* GENERAL PAGE STYLING */
-        body {
-            margin: 0; /* Removes default spacing around page */
-            font-family: Satisfy; /* Sets font style */
-            background-color: #628141;  /* Main background colour */
-            color: rgb(4, 4, 4); /* Default text colour */
-        }
+.hours table {
+  width: 80%;
+  min-width: 400px;
+  margin: auto;
+  border-collapse: separate;       /* border-spacing  */
+  border-spacing: 1px 1px;       /* column spacing, row spacing  */
+  color: white;
+  background: rgba(0,0,0,0.2);     
+}
+</style>
 
-        /* HERO SECTION (TOP BANNER WITH IMAGE + TITLE) */
-        
-        .hero {
-            background-image: url(""); /* Background image for header */
-            background-size: cover;  /* Makes image fill the section */
-            background-position: center; /* Centers the image */
-            padding: 100px; /* Space inside section */
-            text-align: center; /* Centers text horizontally */
-        }
-
-        .hero h1 {
-            font-size: 50px; /* Makes main title large */
-        }
-
-        /* ABOUT SECTION (TEXT + IMAGE SIDE BY SIDE) */
-        .about {
-            display: flex; /* Places text and image next to each other */
-            padding: 40px;
-            background-color: #628141;
-        }
-
-        .about-text {
-            width: 50%; /* Takes half the space */
-        }
-
-        .about img {
-            width: 50%; /* Image takes other half */
-        }
-
-         /* OPENING HOURS SECTION */
-        .hours {
-            text-align: center;
-            padding: 40px;
-        }
-
-        /* TABLE STYLING */
-        table {
-            margin: auto; /* Centers the table */
-            border-collapse: collapse; /* Removes gaps between borders */
-            width: 50%;
-            background-color:#628141;
-            color: black;
-        }
-
-        table, th, td {
-            border: 1px solid black; /* Adds borders to table */
-            padding: 10px; /* Adds spacing inside cells */
-        }
-
-        /* CONTACT SECTION WITH BACKGROUND IMAGE */
-        .contact {
-            padding: 40px;
-            background-image: url("contact.jpg"); /* Background image */
-            background-size: cover;
-        }
-
-    </style>
 </head>
 
-<body>
+<body style="background:linear-gradient(135deg,#628141,#CDB885);">
+<!-- NAVIGATION -->
+<nav>
+    <div class="nav">
+        <img src="picture/img1.jpeg" alt="Logo">
+        <h2>Duskwell & Vine</h2>
+    </div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="menu.xml">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-<!-- HERO SECTION (MAIN TITLE + INTRO) -->
-<div class="hero">
-    <h1>Duskwell & Vine</h1>
-    <p>Fine Dining Experience</p>
+<!-- HERO SECTION -->
+<div class="herowrapper">
+    <div class="heroimg">
+        <img src="picture/img1.jpeg" alt="Restaurant">
+        <img src="picture/img1.jpeg" alt="Restaurant">
+        <img src="picture/img1.jpeg" alt="Restaurant">
+        <img src="picture/img1.jpeg" alt="Restaurant">
+        <img src="picture/img1.jpeg" alt="Restaurant">
+    </div>
+    <div class="herotext">
+        <h1>Duskwell & Vine</h1>
+        <p>Since 2026</p>
+        <p>Fine Dining Experience</p>
+    </div>
 </div>
 
 <!-- ABOUT SECTION -->
-<div class="about">
-
-    <div class="about-text">
+<div class="about" id="about">
+    <img src="picture/img1.jpeg" alt="Food">
+    <div class="abouttext">
         <h2>About Our Restaurant</h2>
-        <!-- Paragraph describing the restaurant -->
         <p>
-            We offer a wide range of freshly prepared dishes in a warm and welcoming environment.
-            Our chefs use high-quality ingredients to deliver an unforgettable dining experience.
+           We offer a wide range of freshly prepared dishes in a warm and welcoming environment.
+           Our chefs use high-quality ingredients to deliver an unforgettable dining experience.
+           Our menu is carefully designed to offer a variety of flavours, ensuring there is something for every guest to enjoy. 
+           Each dish is prepared with care, creativity, and attention to detail, creating a memorable and enjoyable experience for 
+           everyone who visits our restaurant.
         </p>
-        <!-- List of menu categories -->
-
         <h3>Our Menu Includes:</h3>
         <ul>
             <li>Appetisers</li>
             <li>Main Courses</li>
             <li>Drinks</li>
         </ul>
-
-        <!-- Link to XML menu page -->
-
-        <a href="menu.xml">View Menu</a>
+        <a href="xml_and_dtd/menu.xml">View Menu</a>
     </div>
-
-    <!-- Image of the restaurant -->
-    <img src="restaurant.jpg" alt="Restaurant Image">
-
 </div>
 
-<!-- OPENING HOURS -->
-<div class="hours">
-    <h2>Opening Hours</h2>
-
-    <!-- HTML Table showing opening times -->
-
-    <table>
-        <tr>
-            <th>Day</th>
-            <th>Opens</th>
-            <th>Closes</th>
-        </tr>
-        <tr>
-            <td>Mon - Fri</td>
-            <td>10:00</td>
-            <td>22:00</td>
-        </tr>
-        <tr>
-            <td>Saturday</td>
-            <td>12:00</td>
-            <td>23:00</td>
-        </tr>
-        <tr>
-            <td>Sunday</td>
-            <td>12:00</td>
-            <td>20:00</td>
-        </tr>
-    </table>
+<!-- Background Image -->
+<div class="hourswrapper">
+    <img src="picture/img1.jpeg" alt="Restaurant">
+    <div class="hours">
+        <h2>Opening Hours</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Opens</th>
+                <th>Closes</th>
+            </tr>
+            <tr>
+                <td>Mon - Fri</td>
+                <td>10:00</td>
+                <td>22:00</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>12:00</td>
+                <td>23:00</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>12:00</td>
+                <td>20:00</td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 <!-- CONTACT SECTION -->
-<div class="contact">
-    <h2>Contact & Visit Us</h2>
-
-    <!-- Contact details -->
-
-    <p><strong>Address:</strong> 45 London Street, London</p>
-    <p><strong>Phone:</strong> 07123 456789</p>
-    <p><strong>Email:</strong> info@duskwellrestaurant.com</p>
+<div class="contactwrapper" id="contact">
+    <div class="contact">
+        <h2>Contact & Visit Us</h2>
+        <p><strong>Address: 45 London Street, London</strong></p>
+        <p><strong>Phone: 07123 456789</p></strong>
+        <p><strong>Email: hello@duskwellandvine.com</p></strong>
+    </div>
+    <img src="picture/img1.jpeg"  alt="Restaurant" class="contactimg">
+    <div class="centerimg">
+        <img src="picture/img1.jpeg"  alt="Food">
+    </div>
 </div>
 
+<footer>
+    <p>© 2026 Duskwell & Vine</p>
+</footer>
 </body>
 </html>

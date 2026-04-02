@@ -1,103 +1,95 @@
-/* Reset */
+/* RESET */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin: 0; /* remove default margin */
+    font-family: sans-serif; /* default font */
     color: white;
 }
 
-/* Blurred background */
+/* BACKGROUND IMAGE + BLUR */
 body::before {
     content: "";
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: url("../picture/img1.jpeg") no-repeat center/cover;
-    filter: blur(8px);
+    background: url("../picture/img1.jpeg") center/cover no-repeat;
+    filter: blur(8px); /* full-page blur */
     z-index: -1;
 }
 
-/* Main container */
+/* MAIN CONTAINER: blurred gradient only */
 .container {
     width: 80%;
     margin: 50px auto;
     padding: 30px;
-
-    background: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
     border: 2px solid white;
-
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px); /* frosted glass effect */
+    background: linear-gradient(135deg, rgba(98,129,65,0.5), rgba(205,184,133,0.5)); /* semi-transparent gradient */
+    font-style: italic; /* italic text for table/description */
 }
 
-/* Header */
+/* HEADER: restaurant name */
 h1 {
+    font-family: 'Satisfy', cursive; /* Satisfy font */
+    font-style: normal; /* override italic for title */
+    font-size: 64px;
+    letter-spacing: 4px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
+/* BACK BUTTON */
 .back-btn {
     display: block;
     text-align: center;
     margin-bottom: 20px;
     color: white;
     text-decoration: none;
+    font-family: 'Satisfy', cursive; /* Satisfy font */
+    font-style: normal; /* override italic */
 }
 
-/* Category titles */
-h2 {
-    margin-top: 30px;
-    border-bottom: 2px solid white;
-    padding-bottom: 5px;
+.back-btn:hover {
+    text-decoration: underline;
 }
 
-/* Table */
+/* MENU TABLE */
 .menu-table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+    margin-bottom: 25px;
+    border-collapse: separate;
+    border-spacing: 1px;
+    font-style: italic; /* ensure table text is italic */
+}
+
+.category-title {
+    background: rgba(0,0,0,0.4);
+    text-align: left;
+    font-size: 20px;
+}
+
+.menu-table th {
+    background: rgba(255,255,255,0.2);
+    text-align: left;
+    padding: 12px;
+    border: 1px solid white;
 }
 
 .menu-table td {
+    background: rgba(0,0,0,0.2);
     padding: 12px;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid white;
 }
 
-/* Column sizes */
-.name {
-    width: 40%;
+/* HOVER EFFECT */
+.menu-table tr:hover td {
+    background: rgba(255,255,255,0.15);
+    transition: 0.3s;
 }
 
-.price {
-    width: 15%;
-    text-align: center;
-}
-
-.desc {
-    width: 45%;
-}
-
-/* Hover effect */
-.menu-table tr {
-    transition: all 0.3s ease;
-}
-
-.menu-table tr:hover {
-    background: rgba(255,255,255,0.1);
-    transform: scale(1.01);
-    box-shadow: 0 0 8px rgba(255,255,255,0.2);
-}
-
-/* Category images */
-.category-img {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.category-img img {
-    width: 50%;
-    border-radius: 10px;
-}
-
-/* Bottom image */
+/* BOTTOM IMAGE */
 .image {
     text-align: center;
     margin-top: 30px;
@@ -108,7 +100,7 @@ h2 {
     border-radius: 10px;
 }
 
-/* Footer with tooltip */
+/* FOOTER TOOLTIP */
 .footer {
     position: fixed;
     bottom: 10px;
@@ -117,40 +109,32 @@ h2 {
     font-size: 18px;
 }
 
-/* Tooltip hidden */
 .tooltip {
     visibility: hidden;
     opacity: 0;
-
     position: absolute;
     bottom: 30px;
     right: 0;
-
     background: black;
     color: white;
     padding: 8px 12px;
     border-radius: 5px;
-
     font-size: 13px;
     white-space: nowrap;
-
     transition: opacity 0.3s ease;
 }
 
-/* Show tooltip */
 .footer:hover .tooltip {
     visibility: visible;
     opacity: 1;
 }
 
-/* Tooltip arrow */
 .tooltip::after {
     content: "";
     position: absolute;
     top: 100%;
     right: 10px;
-
     border-width: 5px;
     border-style: solid;
-    border-color: black transparent transparent transparent;
+    border-color: linear-gradient(135deg, rgba(98,129,65,0.5), rgba(205,184,133,0.5)) transparent transparent transparent;
 }
