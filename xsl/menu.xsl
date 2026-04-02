@@ -11,6 +11,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/page_2.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&amp;display=swap" rel="stylesheet"/>
+
+<style>
+body {
+    margin: 0; /* remove default margin */
+    font-family: sans-serif; /* default font */
+    color: white;
+}
+</style>
 </head>
 
 <body>
