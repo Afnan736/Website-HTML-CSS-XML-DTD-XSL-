@@ -1,4 +1,4 @@
-/* BACKGROUND IMAGE WITH BLUR */
+/* body */
 body::before {
 content:"";
 position:fixed;

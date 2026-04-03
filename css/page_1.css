@@ -10,14 +10,14 @@ nav{
   z-index:1000;
 }
 
-/* Nav container for logo and title */
+/* Nav container for title */
 .nav{
   display:flex;
   align-items:center;
   gap:12px;
 }
 
-/* Navigation text (logo/title) */
+/* Navigation text title */
 nav h2{
   margin:0;
   font-family:"Satisfy";
@@ -89,7 +89,7 @@ nav ul li a:hover{
   text-shadow:1px 1px 5px rgba(0,0,0,0.8);
 }
 
-/* Container */
+/* heroimg Container */
 .heroimg{
   display:flex;
   animation: slide-track 18s ease-in-out infinite;
