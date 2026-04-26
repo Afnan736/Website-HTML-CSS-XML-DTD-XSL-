@@ -1,4 +1,4 @@
-# Website-HTML-CSS-XML-DTD-XSL- (Duskwell & Vine)
+# Website-HTML-CSS-XML-DTD-XSL (Duskwell & Vine)
 A 2 page website using HTML, CSS, XML, DTD, and XSL for coursework project.
 A static restaurant website built with HTML, CSS, XML, DTD, and XSL — created as a university group coursework project.
  
